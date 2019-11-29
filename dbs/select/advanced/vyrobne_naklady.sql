@@ -9,7 +9,7 @@ FROM vyrobky AS vyr
 RIGHT JOIN
     (SELECT 
         mat_na_vyr.vyrobok_id,
-        SUM(mat.jed_cena * mat_na_vyr.mnozstvo_materialu) AS cena_materialu
+        SUM(mat.jed_cena * mat_na_vyr.mnozstvo) AS cena_materialu
     FROM materialy AS mat
     RIGHT JOIN
         (SELECT *

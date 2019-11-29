@@ -1,10 +1,10 @@
 SELECT 
     vyr.nazov AS 'Vyrobok',
     mat.nazov AS 'Material',
-    mat_na_vyr.mnozstvo_materialu AS 'Mnozstvo Materialu',
+    mat_na_vyr.mnozstvo AS 'Mnozstvo Materialu',
     mat.mer_jed AS 'Merna Jednotka',
     mat.jed_cena AS 'Jednotkova Cena',
-    mat.jed_cena * mat_na_vyr.mnozstvo_materialu AS 'Cena'
+    mat.jed_cena * mat_na_vyr.mnozstvo AS 'Cena'
 FROM 
     materialy_na_vyrobok AS mat_na_vyr, 
     materialy AS mat, 

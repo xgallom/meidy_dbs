@@ -1,4 +1,4 @@
-INSERT INTO materialy_na_vyrobok (vyrobok_id, material_id, mnozstvo_materialu)
+INSERT INTO materialy_na_vyrobok (vyrobok_id, material_id, mnozstvo)
 VALUES 
     (1, 2, 3.00),
     (1, 5, 1.00),
