@@ -1,0 +1,6 @@
+CREATE TABLE vyrobky (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nazov VARCHAR(64) NOT NULL,
+    vyr_cena DECIMAL(6,3) NOT NULL,
+    pred_cena DECIMAL(6,2) NOT NULL
+)
