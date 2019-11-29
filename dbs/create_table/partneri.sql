@@ -1,0 +1,9 @@
+CREATE TABLE partneri (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nazov VARCHAR(64) NOT NULL,
+    mesto CHAR(20) NOT NULL,
+    okres CHAR(20) NOT NULL,
+    ulica CHAR(20) NOT NULL,
+    psc INT(6) NOT NULL,
+    smer CHAR(20) NOT NULL
+)
