@@ -13,5 +13,5 @@ WHERE
     mat_na_vyr.material_id = mat.id AND
     mat_na_vyr.vyrobok_id = vyr.id
 ORDER BY
-    mat_na_vyr.vyrobok_id ASC, 
-    mat_na_vyr.material_id ASC
+    mat_na_vyr.vyrobok_id,
+    mat_na_vyr.material_id
