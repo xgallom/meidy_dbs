@@ -4,4 +4,4 @@ CREATE TABLE dodacie_listy (
     datum DATETIME NOT NULL,
 
     FOREIGN KEY (partner_id) REFERENCES partneri(id)
-)
+);

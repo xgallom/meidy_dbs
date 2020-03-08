@@ -5,4 +5,4 @@ CREATE TABLE materialy_na_vyrobok (
     
     FOREIGN KEY (vyrobok_id) REFERENCES vyrobky(id),
     FOREIGN KEY (material_id) REFERENCES materialy(id)
-)
+);

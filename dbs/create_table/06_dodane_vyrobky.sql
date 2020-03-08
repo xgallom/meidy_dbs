@@ -6,4 +6,4 @@ CREATE TABLE dodane_vyrobky (
 
     FOREIGN KEY (vyrobok_id) REFERENCES vyrobky(id),
     FOREIGN KEY (dodaci_list_id) REFERENCES dodacie_listy(id)
-)
+);

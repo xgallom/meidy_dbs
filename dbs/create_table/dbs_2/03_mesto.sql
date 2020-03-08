@@ -5,4 +5,4 @@ CREATE TABLE mesta (
     psc INT(6) NOT NULL,
 
     FOREIGN KEY (okres_id) REFERENCES okresy(id)
-)
+);

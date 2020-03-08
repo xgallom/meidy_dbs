@@ -3,4 +3,4 @@ CREATE TABLE vyrobky (
     nazov VARCHAR(64) NOT NULL,
     vyr_cena DECIMAL(6,3) NOT NULL,
     pred_cena DECIMAL(6,2) NOT NULL
-)
+);

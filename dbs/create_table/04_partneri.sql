@@ -6,4 +6,4 @@ CREATE TABLE partneri (
     ulica CHAR(20) NOT NULL,
     psc INT(6) NOT NULL,
     smer CHAR(20) NOT NULL
-)
+);

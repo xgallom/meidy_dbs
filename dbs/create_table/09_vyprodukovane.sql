@@ -4,4 +4,4 @@ CREATE TABLE vyprodukovane (
     mnozstvo DECIMAL(6,2) NOT NULL,
 
     FOREIGN KEY (vyrobok_id) REFERENCES vyrobky(id)
-)
+);

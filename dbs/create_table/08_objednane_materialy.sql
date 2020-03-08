@@ -6,4 +6,4 @@ CREATE TABLE objednane_materialy (
 
     FOREIGN KEY (material_id) REFERENCES materialy(id),
     FOREIGN KEY (objednavka_id) REFERENCES objednavky(id)
-)
+);

@@ -4,4 +4,4 @@ CREATE TABLE okresy (
     nazov VARCHAR(64) NOT NULL,
 
     FOREIGN KEY (kraj_id) REFERENCES kraje(id)
-)
+);
