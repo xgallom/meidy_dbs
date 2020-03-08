@@ -1,0 +1,7 @@
+CREATE TABLE okresy (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    kraj_id INT(6) UNSIGNED NOT NULL,
+    nazov VARCHAR(64) NOT NULL,
+
+    FOREIGN KEY (kraj_id) REFERENCES kraje(id)
+)

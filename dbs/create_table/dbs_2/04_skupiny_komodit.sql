@@ -1,0 +1,9 @@
+CREATE TABLE skupiny_vyrobkov (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nazov VARCHAR(64) NOT NULL
+);
+
+CREATE TABLE skupiny_materialov (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nazov VARCHAR(64) NOT NULL
+)

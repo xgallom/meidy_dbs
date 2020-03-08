@@ -1,0 +1,8 @@
+CREATE TABLE mesta (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    okres_id INT(6) UNSIGNED NOT NULL,
+    nazov VARCHAR(64) NOT NULL,
+    psc INT(6) NOT NULL,
+
+    FOREIGN KEY (okres_id) REFERENCES okresy(id)
+)
