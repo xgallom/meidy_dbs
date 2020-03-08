@@ -1,4 +1,4 @@
-INSERT INTO partneri (nazov, mesto, okres, ulica, psc, smer)
+INSERT INTO partneri (nazov, adresa, smer)
 VALUES
     ('Ovci Laz', 'Ruzomberok', 'Neviem', 'Sklenarenska', 03401, 'Dodavatel Latky'),
     ('Kosicke Zeleziarne', 'Kosice', 'Neviem', 'Zelezna', 04011, 'Dodavatel Zipsov'),
