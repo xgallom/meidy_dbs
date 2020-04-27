@@ -1,13 +1,16 @@
-SELECT balans.datum    AS 'Datum',
-       part.nazov      AS 'Partner',
-       balans.typ      AS 'Typ Pohybu',
-       balans.polozka  AS 'Polozka',
-       balans.mnozstvo AS 'Mnozstvo [mj]',
-       balans.mer_jed  AS 'Merna Jednotka',
-       balans.jed_cena AS 'Jednotkova Cena [eur]',
-       balans.cena     AS 'Cena [eur]',
+DROP VIEW IF EXISTS view_balans;
+
+CREATE VIEW view_balans AS
+SELECT balans.datum    AS datum,
+       part.nazov      AS partner,
+       balans.typ      AS typ_pohybu,
+       balans.polozka  AS polozka,
+       balans.mnozstvo AS mnozstvo,
+       balans.mer_jed  AS mer_jed,
+       balans.jed_cena AS jed_cena,
+       balans.cena     AS cena,
        SUM(balans.zmena_stavu) OVER (ORDER BY balans.datum, balans.id ROWS BETWEEN UNBOUNDED PRECEDING AND 0 PRECEDING)
-                       AS 'Stav [eur]'
+                       AS stav
 FROM partneri AS part
          RIGHT JOIN
      (SELECT obj_mat.id                         AS id,
@@ -58,4 +61,4 @@ FROM partneri AS part
             ) AS dod_vyr ON dod_vyr.dodaci_list_id = dod_list.id
            ) AS dod_vyr ON dod_vyr.vyrobok_id = vyr.id
      ) AS balans ON balans.partner_id = part.id
-ORDER BY balans.datum, balans.id;
+ORDER BY balans.datum, balans.id
